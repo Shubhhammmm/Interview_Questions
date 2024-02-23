@@ -1,0 +1,312 @@
+Interview Questions
+
+Company name :- Zygal 
+
+Ques-1 const inputString = "John";
+
+// Split each character into the specified format
+const result = inputString.split('').map((char, index, array) => {
+    if (index < array.length - 1) {
+        return "${char}${array[index + 1]}";
+    } else {
+        return "${char}";
+    }
+});
+
+console.log(result.join(', '));
+
+
+Ques-2 let str = "asjdsireadcnksjerianslayeba";
+let charCountObj = countCharacters(str);
+
+function countCharacters(str) {
+    let charCountObj = {};
+    
+    for (let char of str) {
+        
+        charCountObj[char] = (charCountObj[char] || 0) + 1;
+    }
+    return charCountObj;
+}
+const ans=countCharacters(str);
+console.log(ans);
+
+Ques-3 what is css variables ?
+
+Ques-4 what is calc() in css ?
+
+ques-5 diff btw inline and block level elements ?
+
+ques-6 how to center 2 div child one at top center and other one at bottom center ?
+
+ques-7 diff between object &  array ?
+
+ques-8 method of objects and array to return true or false (whether value is present or not ) ?
+
+ques-9 let str = 'js string exercises'; convert 1st letter into capital and remove the space ?
+
+Ans - 9 let str = 'js string method';
+
+let upperCase = str.split(' ').map((item) =>{
+    return item.charAt(0).toUpperCase() + item.substring(1)
+    
+}).join('')
+
+console.log(upperCase)
+
+
+Company  name - Twinleaves
+
+ques-1 Given an array A having N non-negative integers. Find the element that occurs more than N/2 times. If no such element is there then print -1.
+
+let arr = [1,2,2,3,3,3,3]
+let n = arr.length 
+// Array1 = [1,2,3,4,5]
+// Array2 = [1,1,1,2,3,4,4,4,4,4,4,4,4,4,4,4,4,5,6,6,6,6,6,6]
+
+
+ques-2  sort the age and names..
+let data =  [
+    { id: 1, name: 'John', age: 25, hobbies: { hobby1: 'Reading', hobby2: 'Gaming' } },
+    { id: 2, name: 'Alice', age: 30, hobbies: { hobby1: 'Painting', hobby2: 'Traveling' } },
+    { id: 3, name: 'Bob', age: 28, hobbies: { hobby1: 'Cooking', hobby2: 'Photography' } },
+    { id: 4, name: 'Eva', age: 22, hobbies: { hobby1: 'Cycling', hobby2: 'Writing' } },
+    { id: 5, name: 'Mike', age: 35, hobbies: { hobby1: 'Hiking', hobby2: 'Music' } },
+    { id: 6, name: 'Sophie', age: 29, hobbies: { hobby1: 'Dancing', hobby2: 'Movies' } },
+    { id: 7, name: 'Chris', age: 26, hobbies: { hobby1: 'Swimming', hobby2: 'Programming' } },
+    { id: 8, name: 'Olivia', age: 32, hobbies: { hobby1: 'Singing', hobby2: 'Yoga' } },
+    { id: 9, name: 'Daniel', age: 31, hobbies: { hobby1: 'Fishing', hobby2: 'Chess' } },
+    { id: 10, name: 'Emily', age: 27, hobbies: { hobby1: 'Gardening', hobby2: 'Shopping' } }
+  ];
+
+ let names = data.map((items) =>{
+    return items.name;
+
+ })
+
+ console.log(names.sort());
+
+// 2nd Method 
+
+data.sort((a, b) => a.name.localeCompare(b.name));
+
+console.log(data);
+
+Company Name :- STL
+
+useState
+useEffect
+how to pass data from child to parent
+vice versa
+props
+array occurance
+css position property
+return even from objects araay
+
+const arr = [1,1,1,12,2,2,2,3,4,4,4,5]
+
+const repeatArray = arr.reduce((acc,curr) =>{
+ acc[curr] =  (acc[curr] || 0) +  1
+  return acc
+ 
+},{})
+
+console.log(repeatArray);
+
+Company Name -> SchoolLog
+
+// const obj = {
+//     name : "john",
+//     age : 24,
+
+// }
+
+// const  {name , age = age + 3  } = obj
+
+// object = new obj(age = 25)
+
+// console.log(object)
+
+Write a function that takes in a string and returns the number of unique vowels in that string. For example, for the input "meeting", the output should be 2 ("e", "i").
+
+
+const a = "1";
+let c = '2'
+
+function main(){
+    console.log(a)
+    console.log(b)
+    var b = '3'
+    console.log(b)
+}
+main()
+
+Q.9 Find the smallest & largest number from an array.
+let array = [10, 40, 3, 7, 50, 15]
+
+Q.7 Group all users by age…
+let users = [
+    { user: "A", age: 20 },
+    { user: "B", age: 50 },
+    { user: 'C', age: 20 },
+    { user: "D", age: 20 },
+]
+
+ANS :- let printUser = users.reduce((acc,curr) =>{
+ let {user ,age} = curr;
+  if(!acc[age])
+  {
+    acc[age] = [];
+
+  }
+  acc[age].push(user);
+  return acc;
+
+},{})
+
+console.log(printUser);
+
+Q.6 Solve...
+console.log(Number("-6")+10);
+console.log(Number('hello')+10)
+console.log(10+true)
+console.log(10+false)
+console.log(0.1+0.2===0.3)
+
+Q.8 Find the largest word in given sentence
+let str = 'Write a function that checks if a given string is a palindrome'
+
+ANS :- let words = str.split(" ")
+
+let len = 0;
+let largestWord = "";
+
+words.forEach((word) =>{
+   if(word.length > len)
+   {
+      len = word.length;
+      largestWord = word;
+      // largestWord  = len;
+   }
+})
+
+console.log(largestWord);
+
+Filter out users who possess all documents present in the selectedDocuments by writing a code in JavaScript.
+
+
+ 
+
+let users = [
+
+  {
+
+      name: 'Arvind',
+
+      age: 21,
+
+      gender: 'MALE',
+
+      documents: ['Adhar', '12_Marksheet']
+
+  },
+
+  {
+
+      name: 'Sunil',
+
+      age: 15,
+
+      gender: 'MALE',
+
+      documents: ['Pancard', 'Passport']
+
+  },
+
+  {
+
+      name: 'Rahul',
+
+      age: 18,
+
+      gender: 'MALE',
+
+      documents: ['10_Marksheet']
+
+  },
+
+  {
+
+      name: 'Neha',
+
+      age: 21,
+
+      gender: 'FFMALE',
+
+      documents: ['Adhar', '1O_Marksheet', 'Pancard']
+
+  },
+
+  {
+
+      name: 'Tanu',
+
+      age: 21,
+
+      gender: 'FFMALE',
+
+      documents: []
+
+  }
+
+]let selectedDocuments = ['Adhar', '1O_Marksheet']
+
+Company Name :- Tuner Labs
+
+
+ Exceptional handling
+ Callbyvalue
+ Callbyreference
+ Oops
+ Flexbox, grids
+ Id class
+ Stack queue
+ Async await
+ Fetching using js
+ Then react
+ Styling css
+ Pre increment, Post increment
+Map n foreach
+== ===
+
+Topics asked: HTML, Javascript React and Backend
+HTML-
+div vs span
+inline vs block elements
+pseudo classes vs pseudo selectors- (problem to select elements only by using their parent element)
+Javascript
+setTimeout and setInterval 
+String- definition, use case and example problems
+Reversing a string
+loops- difference, use case and example problems
+for loops
+while loop
+do while loop
+array methods- definition, use case, difference and example problems
+different methods- filter, map
+Given an array that has numbers 1,2,3…10. Print even numbers in a different array. [Done using filter method]
+React-
+given an api, fetch data, render it on screen
+Instead of direct rendering, render it using a child component
+using fetch method and map
+Others
+any other frameworks or libraries other than react? (theory)
+Asked if they know python (answer honestly about your skill level)
+If yes, given a sample program to find error
+Backend-
+what do you know about backend, where it is used, how it is used? (theoretical)
+SQL vs NoSQL
+Projects-
+Open a project done by the candidate and explaining it from A to Z
+
+
