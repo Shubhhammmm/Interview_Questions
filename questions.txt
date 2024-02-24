@@ -309,4 +309,67 @@ SQL vs NoSQL
 Projects-
 Open a project done by the candidate and explaining it from A to Z
 
+different type of tags
+div and span
+img append 
+ways to pass img src 
+anchor tag
+next page relocate
+same page navigate
+
+css
+grid 
+display 
+animation
+transform transition
+pseduo classes &elements
+id &class
+
+
+js
+array obj methos
+data type
+diff for each map filter reduce
+== ===
+async await
+data fetch
+error handling
+// let object = [{name:'arun',age:23},{name:'ajay',age:20},{name:'ashok',age:19},{name:'bhaskar',age:14},{name:'chetan',age:15}]
+
+// let name = object.filter(age => age.age < 19).map(user => user.name)
+// console.log(name);
+
+even odd from array
+call by value & ref
+pre increment post increment
+pick 1st and last element of array 
+settimeout setinterval
+strings
+for in for of while do while
+
+
+react
+
+same data fetch
+components
+functional components & class components
+hooks
+types of hooks
+usestate effect useref usecontext context api 
+props
+drilling
+data parent to child and child to parent
+jsx
+routing
+browser router, route, routes, to path element link useparam exact
+protected route
+
+
+
+stack queue
+
+backend
+nodejs express js
+primary key and foreign key
+
 
