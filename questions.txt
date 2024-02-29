@@ -261,6 +261,23 @@ let users = [
 
 ]let selectedDocuments = ['Adhar', '1O_Marksheet']
 
+
+2nd Round :-
+
+undeclare vs undefined
+closure , react useage , use Memo ,callback,dom,react dom,delete operator,useRef,
+Ques :- let array = ['hello', 'world', 'hello', 'india'];
+occurance
+
+Ques :-  let array = [
+//     {name:'Alice', age:20},
+//     {name:'Max', age:21},
+//     {name:'Jane', age:21},
+// ]
+
+local storage vs session storage
+How we can check array is presented or not ?
+
 Company Name :- Tuner Labs
 
 
@@ -308,5 +325,14 @@ what do you know about backend, where it is used, how it is used? (theoretical)
 SQL vs NoSQL
 Projects-
 Open a project done by the candidate and explaining it from A to Z
+
+
+
+Company Name :- NetCom Learning  (Backend)
+
+https://leetcode.com/problems/longest-substring-without-repeating-characters/
+closures & benefits
+let var const diff
+node js event loop
 
 
