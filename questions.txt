@@ -130,6 +130,80 @@ Company Name -> SchoolLog
 Write a function that takes in a string and returns the number of unique vowels in that string. For example, for the input "meeting", the output should be 2 ("e", "i").
 
 
+method - 1 where we count only vowels n consonant
+
+let str = 'VowelsCount';
+
+let pattern = /[aeiou]/gi;
+
+let consonant = /[^aeiou\s]/gi;
+
+console.log(str.match(pattern).length)
+
+console.log(str.match(consonant).length)
+
+method -2
+
+let str = 'VowelsCount';
+
+let count = 0;
+for(let i = 0; i<str.length; i++)
+{
+    let char = str[i].toLowerCase();
+    if( char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u')
+    {
+        count++;
+    }
+}
+
+console.log(count);
+
+console.log(str.length - count);
+
+Method - 3 Find unique Vowel
+
+function uniqueVowel(string){
+
+    string = string.toLowerCase();
+
+    let vowel = /[aeiou]/gi;
+
+    let matched  = string.match(vowel);
+
+    return matched ? new Set(matched) : 0; 
+
+}
+console.log(uniqueVowel("uniqueVowel"));
+
+Method - 4
+
+function uniqueVowel(string){
+    
+    string = string.toLowerCase();
+
+    let vowel = new Set();
+    
+    for(let char of string)
+    {
+        if('aeiou'.includes(char))
+        {
+            vowel.add(char)
+        }
+    }
+
+    return vowel.size
+
+}
+
+console.log(uniqueVowel("Shubham"));
+
+
+
+
+
+
+
+
 const a = "1";
 let c = '2'
 
@@ -278,6 +352,9 @@ Ques :-  let array = [
 local storage vs session storage
 How we can check array is presented or not ?
 
+
+
+
 Company Name :- Tuner Labs
 
 
@@ -326,76 +403,41 @@ SQL vs NoSQL
 Projects-
 Open a project done by the candidate and explaining it from A to Z
 
-different type of tags
-div and span
-img append 
-ways to pass img src 
-anchor tag
-next page relocate
-same page navigate
 
-css
-grid 
-display 
-animation
-transform transition
-pseduo classes &elements
-id &class
-
-
-js
-array obj methos
-data type
-diff for each map filter reduce
-== ===
-async await
-data fetch
-error handling
-// let object = [{name:'arun',age:23},{name:'ajay',age:20},{name:'ashok',age:19},{name:'bhaskar',age:14},{name:'chetan',age:15}]
-
-// let name = object.filter(age => age.age < 19).map(user => user.name)
-// console.log(name);
-
-even odd from array
-call by value & ref
-pre increment post increment
-pick 1st and last element of array 
-settimeout setinterval
-strings
-for in for of while do while
-
-
-react
-
-same data fetch
-components
-functional components & class components
-hooks
-types of hooks
-usestate effect useref usecontext context api 
-props
-drilling
-data parent to child and child to parent
-jsx
-routing
-browser router, route, routes, to path element link useparam exact
-protected route
-
-
-
-stack queue
-
-backend
-nodejs express js
-primary key and foreign key
-
-
-
-Company Name :- NetCom Learning  (Backend)
+Company Name :- NetCom Learning
 
 https://leetcode.com/problems/longest-substring-without-repeating-characters/
 closures & benefits
 let var const diff
 node js event loop
+
+Company Name :- Incerro
+
+Be ready to explain abt project, if ur project have some thing spl, u need to highlight that, then know about how you r storing data, then authentication, how u r fetching it, then be clear abt the things u have written on ur resume, like any tailwind thing or something,
+Then asynchronous operations
+ Async await
+ Object, properties to be clear , creation, modifying, updating
+ How you iterate through the object actually
+Useeffct, use of dependency array, use of return
+ Promise
+Hooks, like what is hooks
+Then virtual dom
+Class IDs, pseudo elements, pseudo selectors
+Is useState synchronise or asynchronous.
+
+What's useeffect,
+Why you  use useeffect,
+Can you call useState/setState inside useEffect,
+What are the side effects you use inside useEffect,
+How you clear a timeout,
+What are some different array operations and methods,
+How you extract all the keys of an object to an array,
+What's the use of return statement in useEffect,
+Why you use context apis, when you use it
+What are the different ways to store data on client side
+How you managed context api
+Then about redux
+
+
 
 
